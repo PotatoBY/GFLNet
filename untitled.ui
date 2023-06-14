@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>990</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="InputImage">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>231</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>InputImage</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reconstruction">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>240</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reconstruction</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>410</y>
+      <width>55</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Input</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OutputUpper">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>570</y>
+      <width>251</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UpperOutput</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Upper">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>870</y>
+      <width>55</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upper</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bottom">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>870</y>
+      <width>55</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bottom</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OutputVideo">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>461</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HumanOutput</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Output">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>490</y>
+      <width>55</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OutputBottom">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>570</y>
+      <width>251</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BottomOutput</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SHLS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>580</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SSLS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>640</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="CWS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>700</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="HWS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>760</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="WWS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>820</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SPLS">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>880</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_2">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>580</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shirt Length</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_3">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>640</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sleeve Length</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_4">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>700</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Collar Width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_5">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>760</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hem Width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_6">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>820</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Waist Width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Input_7">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>880</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Skirt/Pant Length</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SHL">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>580</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SLL">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>640</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CW">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>700</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HW">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>760</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WW">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>820</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SPL">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>880</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generate">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>520</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1028</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImages"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImages">
+   <property name="text">
+    <string>Images</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
